@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Country Flag Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <h1>Country Flag Search Engine<span>&#127757;</span></h1>
+    <div id="search-zone">
+        <form id="searchForm">
+            <label>Select the region here</label>
+            <select name="region" id="search-region" size="1">
+                <option value="europe">Europe</option>
+                <option value="africa">Africa</option>
+                <option value="asia">Asia</option>
+                <option value="america">America</option>
+                <option value="oceania">Oceania</option>
+            </select>
+            <button id="search-btn">Search</button>
+        </form>
+        <button id="clear-btn" onclick="resetCountry()">Clear</button>
+    </div>
+
+    <div id="search-result"></div>
+
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
